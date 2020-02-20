@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>forTime</title>
     <script type="text/javascript"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <div class="top-text">
         <h2>WODTimer | For time</h2>
-        <p>As fast as possible</p>
+        <p>As fast as possible in <div id="inputMinutes">10 Minutes</div></p>
+        <script>
+            function inputMin() {
+                let timeCap = document.getElementById("forTimeCap").value;
+                let timeConvert = Number(timeCap);
+                document.getElementById("inputMinutes").innerHTML = timeConvert + " Minutes";
+            }
+
+        </script>
     </div>
 </header>
-<table>
-    <tr>
-        <td>TimeCap</td>
-    </tr>
-    <tr>
-        <td><input type="text" id="forTimeCap" size="3">Minutes</td>
-    </tr>
-</table>
+<div class="setTime">
+    <p>TimeCap in minutes</p>
+    <input onchange="inputMin();" type="text" id="forTimeCap" size="3">
+</div>
 
 
 <div class="container">
@@ -28,12 +34,15 @@
         00:00:00
     </div>
 
-    <div class="buttons">
+    <div class="tabs">
         <button id="startStop" onclick="startStop()">Start</button><button id="reset" onclick="reset()">Reset</button>
+
     </div>
 </div>
 
+<div class="tabs"><button class="btn index"><a href="index.html">Go Back</a></button></div>
+
+
 </body>
-<footer>WODTIMER© | Developed by Sjur Martin Kleppan</footer>
 </html>
 

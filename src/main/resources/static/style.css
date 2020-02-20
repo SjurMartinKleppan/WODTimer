@@ -2,4 +2,106 @@ body {
     margin: 0;
     padding: 0;
     background-color: darkcyan;
+    font-family: "Helvetica Neue";
+}
+
+/* Setter attributter for topteksten*/
+.top-text {
+    text-align: center;
+    padding-top: 10%;
+    color: ghostwhite;
+}
+
+.top-text h2 {
+    font-weight: Bolder;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 58px;
+}
+
+.top-text p {
+    font-size: 28px;
+}
+
+#inputMinutes {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*Setter attributter for knapper*/
+.tabs {
+    text-align: center;
+}
+
+.tabs button{
+    align-content: center;
+    background-color: black;
+    border: none;
+    padding: 20px 36px;
+    margin: 1%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Attributter for stopWatch*/
+
+.container {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+/* TimeCap settings attributter */
+
+.setTime p {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+input {
+    margin-left: 49%;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px){
+    .top-text h2 {
+        font-weight: Bolder;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        font-size: 42px;
+    }
+
+    input {
+        margin-left: 44%;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+    .top-text h2 {
+        font-weight: Bolder;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        font-size: 32px;
+    }
+
+    input {
+        margin-left: 44%;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
